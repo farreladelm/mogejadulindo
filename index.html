@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1cf4c7dee0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Moge Jadul</title>
+</head>
+
+<body class="bg-dark">
+    <!-- START HEADER -->
+    <header class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <div class="navbar-nav mx-2 mb-2 mb-lg-0">
+                <button aria-controls="sidebar" aria-expanded="false" class="sidebar-toggle nav-item mx-auto mx-sm-0">
+                    <i id="sidebar-icon" class="fs-3 fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div class="navbar-nav mx-2 mb-2 mb-lg-0">
+                <a href="#" class="ps-lg-3 nav-item ">
+                    <img src="assets/img/logo.png" class="logo" style="max-width: 90px; min-width: 50px;">
+                </a>
+            </div>
+            <div class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <div class="nav-item ms-auto">
+                    <h1 class="cover text-capitalize fw-bolder">
+                        Moge Jadul Indonesia
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="container navbar-nav mb-2 mb-lg-0 d-flex justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link py-3 px-3 active" aria-current="page" href="#home" onclick="loadLanding()">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-3 px-3" href="#profil" onclick="loadLanding()">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-3 px-3" href="#vmisi" onclick="loadLanding()">Visi dan Misi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-3 px-3" href="#produk" onclick="loadLanding()">Produk Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-3 px-3" href="#kontak" onclick="loadLanding()">Kontak Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-3 px-3" href="#about-us" onclick="loadLanding()">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- START SIDEBAR -->
+    <nav id="sidebar" class="sidebar" data-visible="false">
+        <ul class="d-flex flex-column justify-content-between">
+            <li class="nav-item">
+                <a class="nav-link py-3 px-3 text-white" href="#" onclick="loadArtikel()">Artikel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link py-3 px-3 text-white" href="#" onclick="loadEvent()">Event</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link py-3 px-3 text-white" href="#" onclick="loadGaleri()">Galeri Foto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link py-3 px-3 text-white" href="#" onclick="loadKlien()">Klien Kami</a>
+            </li>
+            <li>
+                <a href="#submenu2" data-bs-toggle="collapse" class="nav-link py-3 px-3 text-white">
+                    Login</a>
+                <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                    <li class="w-100">
+                        <a href="#" class="nav-link px-2 text-white"> <span class="d-none d-sm-inline">Sign in</span></a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <a href="#" class="nav-link px-2 text-white"> <span class="d-none d-sm-inline">Sign up</span></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- END SIDEBAR -->
+
+    <section id="content">
+        
+    </section>
+        
+    <div class="scroll-to-top text-center rounded-circle" onclick="scrollToTop()">
+        <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </div>
+    
+    <footer class="footer container-fluid text-light text-center p-3">
+        Hanya digunakan untuk kepentingan pembelajaran | referensi diambil dari @mogejadul_indonesia
+    </footer>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script>
+
+        console.log("loading");
+        $("#content").load("pages/landing.html");
+
+        function loadLanding(){
+            $("#content").load("pages/landing.html");
+        }
+
+        function loadGaleri(){
+            $("#content").load("pages/galeri.html");
+        }
+        function loadKlien(){
+            $("#content").load("pages/klien.html");
+        }
+        function loadEvent(){
+            $("#content").load("pages/event.html");
+        }
+        function loadArtikel(){
+            $("#content").load("pages/artikel.html");
+        }
+
+        function scrollToTop() {
+            window.scrollTo(0, 0);
+        }  
+
+    </script>
+    <script>
+        const sidebarToggle = document.querySelector(".sidebar-toggle");
+        const sidebarNav = document.getElementById("sidebar");
+        const sidebarIcon = document.getElementById("sidebar-icon");
+        
+        function handleMousePos(event) {
+            var mouseClickWidth = event.clientX;
+            console.log(mouseClickWidth)
+            if(mouseClickWidth>=245){
+                const visibility = sidebarNav.getAttribute('data-visible');
+                if( visibility == 'true') {
+                    sidebarNav.setAttribute('data-visible', false);
+                    sidebarToggle.setAttribute('aria-expanded', false);
+                    sidebarIcon.classList.remove("fa-xmark");
+                    sidebarIcon.classList.add("fa-bars");
+                    sidebarIcon.classList.remove("text-light");
+                    $('body').removeClass('stop-scrolling');
+                    $('body').unbind('touchmove');
+                }
+                    
+            }
+        }
+        
+        sidebarToggle.addEventListener('click', () => {
+            const visibility = sidebarNav.getAttribute('data-visible');
+            if(visibility == 'false') {
+                sidebarNav.setAttribute('data-visible', true);
+                sidebarToggle.setAttribute('aria-expanded', true);
+                sidebarIcon.classList.remove("fa-bars");
+                sidebarIcon.classList.add("text-light");
+                sidebarIcon.classList.add("fa-xmark");
+                $('body').addClass('stop-scrolling');
+                $('body').bind('touchmove', function(e){e.preventDefault()});
+            } else {
+                sidebarNav.setAttribute('data-visible', false);
+                sidebarToggle.setAttribute('aria-expanded', false);
+                sidebarIcon.classList.remove("fa-xmark");
+                sidebarIcon.classList.add("fa-bars");
+                sidebarIcon.classList.remove("text-light");
+                $('body').removeClass('stop-scrolling');
+                $('body').unbind('touchmove');
+            }
+        })
+
+        document.addEventListener("click", handleMousePos);
+        </script>
+</body>
+
+</html>

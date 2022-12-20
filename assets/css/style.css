@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.cover {
+    font-family: 'Fugaz One', cursive;
+}
+
+body {
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+hr {
+    height: .3rem;
+    background: #871b18;
+    max-width: 80%;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+td {
+    text-align: left;
+}
+
+.bg-accent {
+    background: #871b18;
+}
+
+.bg-grey {
+    background-color: rgb(53, 53, 53);
+}
+
+.btn-accent {
+    font-weight: semi-bold;
+    color: #fff;
+    background-color: #9f2a26;
+    border: 1px solid #9f2a26;
+    transition: .3s ease-out;
+}
+.btn-accent:hover {
+    background-color: #871b18;
+    border: 1px solid #871b18;
+    color: #fff;
+}
+
+.sidebar-toggle {
+    z-index: 9999;
+    background: transparent;
+    border: none;
+    width: 2rem;
+    aspect-ratio: 1;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: hsl(0, 0%, 0%, 0.8);
+    height: 100vh;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    padding: min(30vh, 6rem) 3rem; 
+    backdrop-filter: blur(.8rem);
+    transform: translate(-100%);
+    transition: transform .25s ease-out;
+}
+
+.sidebar ul li a {
+    color: #fff;
+}
+
+.sidebar[data-visible="true"] {
+transform: translateX(0%);
+
+}
+
+/* ================ HERO SLIDER ===================== */
+.slider-container {
+    width: 100%;
+}
+
+.swiper {
+    width: 100%;
+    margin: 0;
+    background-color: var(--dark-col);
+    filter: brightness(90%);
+    transition: .3s ease;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--light-col);
+    width: 40px;
+    height: 3px;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--accent-col);
+}
+
+.card {
+    padding: 1rem;
+}
+
+/* ========== PROFILE PERUSAHAAN ================ */
+
+.detail-mogejadul p {
+ max-width: 700px;
+ min-width: 200px;
+}
+
+/* footer */
+.footer {
+    background-color: rgb(62, 62, 62);
+    font-size: .8rem;
+}
+
+/* scroll to top */
+
+.scroll-to-top {
+    cursor: pointer;
+    position: sticky;
+    left: 2rem;
+    bottom: 2rem;
+    width: 2rem;
+    aspect-ratio: 1;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
