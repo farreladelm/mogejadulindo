@@ -101,23 +101,28 @@
     </nav>
     <!-- END SIDEBAR -->
 
+    <!-- START CONTENT -->
     <section id="content">
         
     </section>
-        
+    <!-- END CONTENT -->
+    <!-- START SCROLL TO TOP BTN -->
     <div class="scroll-to-top text-center rounded-circle" onclick="scrollToTop()">
         <i class="fa-sharp fa-solid fa-arrow-up"></i>
     </div>
-    
+    <!-- END SCROLL TO TOP BTN -->
+    <!-- START FOOTER -->
     <footer class="footer container-fluid text-light text-center p-3">
         Hanya digunakan untuk kepentingan pembelajaran | referensi diambil dari @mogejadul_indonesia
     </footer>
+    <!-- END FOOTER -->
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- SINGLE PAGE APPLICATION JS -->
     <script>
 
-        console.log("loading");
         $("#content").load("pages/landing.html");
 
         function loadLanding(){
@@ -142,6 +147,7 @@
         }  
 
     </script>
+    <!-- SIDEBAR JS -->
     <script>
         const sidebarToggle = document.querySelector(".sidebar-toggle");
         const sidebarNav = document.getElementById("sidebar");
@@ -187,7 +193,8 @@
         })
 
         document.addEventListener("click", handleMousePos);
-        </script>
+    </script>
+    <!-- END SIDEBAR JS -->
 </body>
 
 </html>

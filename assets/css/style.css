@@ -155,3 +155,8 @@ transform: translateX(0%);
     height: 100%;
     overflow: hidden;
   }
+
+  .klien div {
+    width: 12rem;
+    aspect-ratio: 1;
+  }
