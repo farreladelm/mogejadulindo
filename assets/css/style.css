@@ -162,6 +162,10 @@ transform: translateX(0%);
     aspect-ratio: 1;
   }
 
+  .logo {
+    width: 90px;
+  }
+
   @media screen and (max-width: 500px) {
     .logo {
         width: 50px;
