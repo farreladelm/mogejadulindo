@@ -30,6 +30,7 @@ hr {
 
 td {
     text-align: left;
+    padding-block: .5rem;
 }
 
 .bg-accent {
