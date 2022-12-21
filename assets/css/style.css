@@ -161,3 +161,10 @@ transform: translateX(0%);
     width: 12rem;
     aspect-ratio: 1;
   }
+
+  @media screen and (max-width: 500px) {
+    .logo {
+        width: 50px;
+    }
+    
+  }
